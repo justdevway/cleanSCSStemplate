@@ -1,0 +1,95 @@
+body,div,footer,header,html {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+footer,header {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+  font-size: 16px;
+  line-height: 1.4;
+}
+
+body {
+  height: 100%;
+  width: 100%;
+}
+
+.l-wrapper {
+  width: 100%;
+  height: 100%;
+  display: table;
+}
+
+.l-content {
+  height: 100%;
+  display: table-row;
+}
+
+::-moz-selection {
+  background: #d7dbe2;
+}
+
+::selection {
+  background: #d7dbe2;
+}
+
+header {
+  font-size: 30px;
+  font-weight: 800;
+  color: red;
+}
+
+footer {
+  padding: 40px 10px;
+  background: #f08080;
+}
+
+@font-face {
+  font-family:OpenSans;src:url(../fonts/OpenSans-Regular.ttf);font-weight:400;font-style:normal;
+}
+
+@font-face {
+  font-family:OpenSans;src:url(../fonts/OpenSans-Semibold.ttf);font-weight:600;font-style:normal;
+}
+
+@font-face {
+  font-family:OpenSans;src:url(../fonts/OpenSans-Bold.ttf);font-weight:700;font-style:normal;
+}
+
+@font-face {
+  font-family:OpenSans;src:url(../fonts/OpenSans-LightItalic.ttf);font-weight:300;font-style:italic;
+}
+
+@font-face {
+  font-family:OpenSans;src:url(../fonts/OpenSans-ExtraBoldItalic.ttf);font-weight:800;font-style:italic;
+}
+
+@font-face {
+  font-family:Arvo;src:url(../fonts/Arvo-Regular.ttf);font-weight:400;font-style:normal;
+}
+
+@font-face {
+  font-family:Montserrat;src:url(../fonts/Montserrat-Regular.ttf);font-weight:400;font-style:normal;
+}
+
+@font-face {
+  font-family:RobotoSlab;src:url(../fonts/RobotoSlab-Regular.ttf);font-weight:400;font-style:normal;
+}
+
+/*# sourceMappingURL=main__template.css.map */

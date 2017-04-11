@@ -1,0 +1,58 @@
+body,div,footer,header,html {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+footer,header {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+  font-size: 16px;
+  line-height: 1.4;
+}
+
+body {
+  height: 100%;
+  width: 100%;
+}
+
+.l-wrapper {
+  width: 100%;
+  height: 100%;
+  display: table;
+}
+
+.l-content {
+  height: 100%;
+  display: table-row;
+}
+
+::-moz-selection {
+  background: #d7dbe2;
+}
+
+::selection {
+  background: #d7dbe2;
+}
+
+header {
+  font-size: 30px;
+  font-weight: 800;
+  color: red;
+}
+
+/*# sourceMappingURL=header__template.css.map */

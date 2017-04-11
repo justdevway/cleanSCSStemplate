@@ -1,0 +1,28 @@
+{
+  "name": "workflow",
+  "description": "",
+  "main": "index.js",
+  "authors": [
+    "Artyom Svinin"
+  ],
+  "license": "ISC",
+  "homepage": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "Full/libs",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "susy": "^2.2.12",
+    "breakpoint-sass": "^2.7.0"
+  },
+  "devDependencies": {
+    "html5shiv": "^3.7.3",
+    "include-media": "^1.4.9",
+    "jquery": "^3.1.1"
+  }
+}

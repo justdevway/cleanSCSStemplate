@@ -156,7 +156,7 @@ gulp.task("baseFileTransition", function () {
         .pipe(gulp.dest("Clean/"))
 });
 gulp.task("accessTransition", function () {
-    return gulp.src("Full/.htaccess")
+    return gulp.src("Full/*.htaccess")
         .pipe(gulp.dest("Clean/"))
 });
 gulp.task("webpTransition", function () {

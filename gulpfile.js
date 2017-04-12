@@ -71,7 +71,7 @@ gulp.task("sassNow", function () {
         }))
 });
 
-gulp.task("sassHead", function () {
+gulp.task("sassHeader", function () {
     return gulp.src(paths.headerScss)
         .pipe(changed('Full/css'))
         .pipe(sourcemaps.init())
@@ -227,8 +227,8 @@ gulp.task('default', function (callback) {
 gulp.task('build', function (callback) {
     runSequence(
         'clean:dist',
-        ['sassHead', 'sassFooter'],
-        ['sassHead', 'sassFooter', 'useref', 'images', 'convertInWebP', 'fontsTransition', 'videoTransition', "baseFileTransition", "phpTransition", "webpTransition", "accessTransition"],
+        ['sassHeader', 'sassFooter'],
+        ['sassHeader', 'sassFooter', 'useref', 'images', 'convertInWebP', 'fontsTransition', 'videoTransition', "baseFileTransition", "phpTransition", "webpTransition", "accessTransition"],
         'inlineStyle',
         'cleaningProductHtml',
         // If need convert in index.php

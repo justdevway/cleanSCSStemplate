@@ -31,18 +31,29 @@ html {
 
 body {
   height: 100%;
-  width: 100%;
 }
 
-.l-wrapper {
-  width: 100%;
+.page {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
   height: 100%;
-  display: table;
 }
 
-.l-content {
-  height: 100%;
-  display: table-row;
+.page__body {
+  -webkit-box-flex: 1;
+  -ms-flex: 1 0 auto;
+  flex: 1 0 auto;
+}
+
+.page__footer {
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 auto;
+  flex: 0 0 auto;
 }
 
 ::-moz-selection {

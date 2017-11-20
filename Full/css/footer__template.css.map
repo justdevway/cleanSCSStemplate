@@ -1,1 +1,0 @@
-{"version":3,"sources":["3layout/3l-test.scss"],"names":[],"mappings":"AAAA,OACE,QAAA,KAAA,KACA,WAAA","file":"footer__template.css","sourcesContent":["footer {\r\n  padding: 40px 10px;\r\n  background: lightcoral;\r\n}"]}

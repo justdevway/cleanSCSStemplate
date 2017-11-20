@@ -6,29 +6,36 @@ html {
 
 body {
   height: 100%;
-  width: 100%;
 }
 
-.l-wrapper {
-  width: 100%;
+.page {
+  display: flex;
+  flex-direction: column;
   height: 100%;
-  display: table;
 }
 
-.l-mainContent {
+.page__container {
   width: 100%;
   max-width: 1366px;
   margin: 0 auto;
 }
 
-.l-content {
-  height: 100%;
-  display: table-row;
+.page__body {
+  flex: 1 0 auto;
+}
+
+.page__footer {
+  flex: 0 0 auto;
 }
 
 .hidden {
   display: none;
 }
+
+.page__word {
+  white-space: nowrap;
+}
+
 
 
 input[type=number]::-webkit-inner-spin-button,
@@ -45,8 +52,4 @@ input::-ms-clear {
 
 ::selection {
   background: rgba(#d7dbe2, 1);
-}
-
-.word {
-  white-space: nowrap;
 }

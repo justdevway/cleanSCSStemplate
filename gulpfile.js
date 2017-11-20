@@ -209,14 +209,11 @@ gulp.task("createIndexPhp", function () {
 
 
 gulp.task("watch", ["browserSync", "sassNow", "images", "fontsTransition", "videoTransition", "baseFileTransition"], function () {
+    gulp.watch(paths.allJs, ['babel'])
     gulp.watch(paths.allScss, ["sassNow"]);
-    // gulp.watch(paths.allCss).on("change", browserSync.reload);
-    // gulp.watch("Full/*.html", browserSync.reload);
-    gulp.watch(paths.mainHtml).on("change", browserSync.reload);
-    // gulp.watch(paths.allHtml).on("change", browserSync.reload);
-    // gulp.watch(paths.mainPhp).on("change", browserSync.reload);
-    gulp.watch(paths.allPhp).on("change", browserSync.reload);
-    gulp.watch(paths.allJs).on("change", browserSync.reload);
+    gulp.watch(paths.mainHtml).on('change', browserSync.reload)  
+    gulp.watch(paths.allPhp).on('change', browserSync.reload)
+    gulp.watch(paths.allJs).on('change', browserSync.reload)
 });
 
 gulp.task('default', function (callback) {

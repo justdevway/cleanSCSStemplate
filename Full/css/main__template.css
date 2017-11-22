@@ -26,7 +26,8 @@ html {
 }
 
 html {
-  font-size: 16px;
+  font-family: Open Sans,sans-serif;
+  font-size: 10px;
   line-height: 1.4;
 }
 

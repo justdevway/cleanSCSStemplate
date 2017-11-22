@@ -213,7 +213,7 @@ gulp.task('babel', function () {
         .pipe(gulp.dest('Full/js/afterBabel'))
 });
 
-gulp.task('watch', ['browserSync', 'sassNow', 'babel', 'images', 'fontsTransition', 'videoTransition', 'baseFileTransition'], function () {
+gulp.task('watch', ['browserSync', 'sassNow', 'babel'], function () {
   gulp.watch(paths.allJs, ['babel'])
   gulp.watch(paths.allScss, ["sassNow"]);
   gulp.watch(paths.mainHtml).on('change', browserSync.reload)  
@@ -222,7 +222,7 @@ gulp.task('watch', ['browserSync', 'sassNow', 'babel', 'images', 'fontsTransitio
 });
 
 gulp.task('default', function (callback) {
-  runSequence(['sassNow', 'browserSync', 'convertInWebP', 'watch'],
+  runSequence(['sassNow', 'browserSync', 'watch'],
         callback
     )
 });

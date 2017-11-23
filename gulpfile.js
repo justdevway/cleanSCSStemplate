@@ -58,7 +58,8 @@ var plugins = [
   duplicates(),
   uncss({
     html: [paths.mainHtml],
-    ignore: ['.is-active', 'is-active', '.is-hide', ':after', ':before']
+    // ignore: ['.is-active', 'is-active', '.is-hide', ':after', ':before']
+    ignore: [/\.is-active/, /\.is-hide/, /\:after/, /\:before/]
   })
 ];
 

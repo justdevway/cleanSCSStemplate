@@ -1,18 +1,20 @@
-body,div,footer,header,html {
+html {
+  line-height: 1.15;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
   margin: 0;
-  padding: 0;
-  border: 0;
-  font-size: 100%;
-  font: inherit;
-  vertical-align: baseline;
 }
 
 footer,header {
   display: block;
 }
 
-body {
-  line-height: 1;
+::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  font: inherit;
 }
 
 html {
